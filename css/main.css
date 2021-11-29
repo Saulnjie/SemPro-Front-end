@@ -1,5 +1,6 @@
 .container {
-    display: flex;    
+    display: flex;
+flex-direction: column;
     
 }
 
@@ -11,3 +12,6 @@
     margin: 20px;
     width: 500px;
 }
+
+
+.is-hidden { display: none; }
