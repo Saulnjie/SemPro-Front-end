@@ -10,19 +10,16 @@
 <body>
     
 <div class="container">
-    <div class="searchbar">
-    <input type="text" id="search"/>
+
+<label for="searchbox">Search</label>  
+<input type="search" oninput="liveSearch()" id="searchbox" />
+<div class="albums"></div>
 </div>
-    <div class="albums"></div>
-</div>
-
-
-
-
 
 
     <script type="module" src="./js/components/async.js"></script>
     <script type="module" src="./js/components/HTMLtoDom.js"></script>
+    <script type="module" src="./js/components/filter.js"></script>
     <script type="module" src="./js/index.js"></script>
 </body>
 </html>

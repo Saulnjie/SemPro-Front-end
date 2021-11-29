@@ -1,18 +1,20 @@
-import { getMeData } from "./components/async.js";
+function liveSearch() {
+    let cards = document.querySelectorAll('.album_card');
+    let search_query = document.getElementById('searchbox').value;
+    for (var i = 0; i < cards.length; i++) {
+        if (cards[i].innerText.toLowerCase().includes(search_query.toLowerCase())) {
+            cards[i].classList.remove('is-hidden');
+        } else {
+            cards[i].classList.add('is-hidden');
+        }
+    }
+}
 
-let Allalbums = document.querySelector('.albums')
-let array = [];
+let typingTimer;
+let typeInterval = 500;
+let searchInput = document.getElementById('searchbox');
 
-
-// SEARCH SECTION
-let searchInput = document.querySelector('#search');
-searchInput.onkeyup = function () {
-    Allalbums.innerHTML = '';
-    let filteredArticles = array.filter((array) => {
-        return array.toLowerCase().includes(this.value.toLowerCase());
-    });
-
-    // createHTML(Allalbums, filteredArticles, 'array');
-    console.log(filteredArticles);
-    console.log(filteredArticles);
-};
+searchInput.addEventListener('keyup', () => {
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(liveSearch, typeInterval);
+});
