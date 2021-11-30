@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Cammies Records | Cart</title>
 </head>
 <body>
-    
+    <div class="container">
+
+        <label for="searchbox">Search</label>  
+        <input type="search" oninput="liveSearch()" id="searchbox" />
+        <a href="/index.html">
+            <div class="buttonBack">BACK</div>
+            </a>
+        <div class="products"></div>
+        <div class="albums"></div>
+        </div>
+        
+        
+    <script type="module" src="./js/components/async.js"></script>
+    <script type="module" src="./js/libs/favourites.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
