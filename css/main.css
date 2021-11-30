@@ -14,9 +14,6 @@ flex-direction: column;
 }
 
 
-.is-hidden { display: none; }
-
-
 .button {
     border: 2px soilid black;
     background-color: rgb(112, 87, 136);
@@ -28,3 +25,5 @@ flex-direction: column;
     background-color: rgb(112, 87, 136);
     color: white;
 }
+
+.is-hidden { display: none; }
