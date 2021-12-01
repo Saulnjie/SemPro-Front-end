@@ -1,7 +1,6 @@
 .container {
     display: flex;
-flex-direction: column;
-    
+flex-direction: column; 
 }
 
 
@@ -13,6 +12,10 @@ flex-direction: column;
     width: 500px;
 }
 
+
+.is-hidden { 
+    display: none; 
+}
 
 .button {
     border: 2px soilid black;
@@ -26,4 +29,3 @@ flex-direction: column;
     color: white;
 }
 
-.is-hidden { display: none; }
