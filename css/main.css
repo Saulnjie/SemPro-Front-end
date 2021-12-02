@@ -1,31 +1,61 @@
+@import "./index.css";
+
+:root {
+    --background: #222431;
+    --darkBackground: #1D1F29;
+    --yellow: #FFD200;
+    --cardBackground: #00000098;
+    --buttonColor: #4073FF;
+  }
+
 .container {
     display: flex;
-flex-direction: column; 
+    flex-direction: column; 
 }
 
+body {
+    background-color: #222431;
+}
 
-.album_card {
+.navigation-container {
+    background-color: var(--darkBackground);
+}
+
+.navigationbar {
+
+    margin: auto;
+    background-color: var(--darkBackground);
+    color: white;
+
+}
+
+.navSearchBar {
+    background-color:white ;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.footer {
+    background-color: var(--darkBackground);
+}
+
+footer p {
+    color: white;
+}
+
+.footerbar {
     display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    margin: 20px;
-    width: 500px;
+    flex-direction: row;
+    background-color: var(--darkBackground);
 }
 
+.footer-image {
+    margin-left: 10%;
+}
 
 .is-hidden { 
     display: none; 
-}
-
-.button {
-    border: 2px soilid black;
-    background-color: rgb(112, 87, 136);
-    color: white;
-}
-
-.buttonBack {
-    border: 2px soilid black;
-    background-color: rgb(112, 87, 136);
-    color: white;
 }
 

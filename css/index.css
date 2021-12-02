@@ -1,0 +1,30 @@
+.album_card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--cardBackground);
+    border: 2px solid rgb(236, 120, 120);
+    margin: 20px;
+    width: 500px;
+}
+
+label {
+    color:white;
+}
+
+button {
+    border: 12px soilid black;
+    background-color:var(--buttonColor);
+    color: white;
+}
+
+#heart-button {
+    background-color:var(--buttonColor);
+}
+
+.buttonBack {
+    border: 2px soilid black;
+    background-color: var(--cardBackground);
+    color: white;
+}
+
