@@ -55,6 +55,13 @@ footer p {
     margin-left:8.5%;
 }
 
+.heroBanner {
+    width: 75%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
 .is-hidden { 
     display: none; 
 }

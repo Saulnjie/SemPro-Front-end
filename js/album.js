@@ -7,6 +7,7 @@ export function renderAlbum(album, withDescription = false) {
 
 	albumCard.classList.add("album_card")
 	albumCard.innerHTML = `
+		<img class="album-cover" src="${album.Albumcover}" alt="${album.Covertag}">
 		<h1>${album.ArtistName}</h1>
 		<h2>${album.AlbumName}</h2>
 		<p>${album.Price}</p>
