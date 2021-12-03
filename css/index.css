@@ -1,11 +1,27 @@
+.albums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: space-between;
+    
+}
+
 .album_card {
     display: flex;
     flex-direction: column;
     color: white;
     background-color: var(--cardBackground);
-    border: 2px solid rgb(236, 120, 120);
-    margin: 20px;
-    width: 500px;
+    margin: 20px 0px 20px 0px;
+    width: 350px;
+    justify-content: space-between;
+
+}
+
+.album_card img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
 }
 
 label {
@@ -13,7 +29,9 @@ label {
 }
 
 button {
-    border: 12px soilid black;
+    border: none;
+    height: 40px;
+    width: 100px;
     background-color:var(--buttonColor);
     color: white;
 }
