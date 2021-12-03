@@ -12,12 +12,15 @@ export function renderAlbum(album, withDescription = false) {
 		<h2>${album.AlbumName}</h2>
 		<p>${album.Price}</p>
 		${withDescription === true ? `<p>${album.Description}</p>` : ""}
+		<div class="card_btn_container">
+		<button class="view_album_btn">
 		<a href="/detailed.html?id=${album.id}">
 		View album
-		</a>
+		</a></button>
 		<button id="${buttonId}">
 		<i class="far fa-heart" data-name="${album.ArtistName}" data-album="${album.AlbumName}" data-price="${album.Price}"></i>
 		</button>
+		</div>
 	`
 
 	document.querySelector('.albums').appendChild(albumCard)

@@ -1,1 +1,8 @@
 @import "/css/main.css";
+@import "/css/index.css";
+
+.hero_title {
+    color: var(--yellow);
+    font-size: 30px;
+    font-weight:700;
+}
