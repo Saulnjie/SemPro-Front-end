@@ -13,6 +13,66 @@
     flex-direction: column; 
 }
 
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card_info_container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    height: 100px;
+}
+
+.card_info_container h1 {
+font-size: 20px;
+font-weight: 400;
+}
+
+.card_info_container h2 {
+    font-size: 16px;
+    font-weight: 300;
+    }
+
+.card_btn_container {
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        
+    }    
+.view_album_btn {
+        border: none;
+        height: 25px;
+        width: 100px;
+        background-color:var(--buttonColor);
+        color: white;
+        display: flex;
+        justify-content: center;
+    } 
+    
+.view_album_btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+.like_btn {
+    /* width: 50px; */
+    margin-left: 15px;
+}
+
+.nav-item .active {
+    color: var(--yellow) !important;
+}
+
+.hero_content_container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 body {
     background-color: #222431;
 }
@@ -94,24 +154,6 @@ flex-direction: row;
     font-weight: 300;
 }
 
-.card_btn_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.view_album_btn {
-    border: none;
-    height: 40px;
-    width: 100px;
-    background-color:var(--buttonColor);
-    color: white;    
-}
-
-.view_album_btn a {
-    color: white;
-    text-decoration: none;
-}
 
 
 .is-hidden { 

@@ -8,19 +8,25 @@ export function renderAlbum(album, withDescription = false) {
 	albumCard.classList.add("album_card")
 	albumCard.innerHTML = `
 		<img class="album-cover" src="${album.Albumcover}" alt="${album.Covertag}">
+	<div class="card_container">
+		<div class="card_wrapper">
+			<div class="card_info_container">
 		<h1>${album.ArtistName}</h1>
 		<h2>${album.AlbumName}</h2>
-		<p>${album.Price}</p>
-		${withDescription === true ? `<p>${album.Description}</p>` : ""}
-		<div class="card_btn_container">
-		<button class="view_album_btn">
-		<a href="/detailed.html?id=${album.id}">
-		View album
-		</a></button>
-		<button id="${buttonId}">
-		<i class="far fa-heart" data-name="${album.ArtistName}" data-album="${album.AlbumName}" data-price="${album.Price}"></i>
-		</button>
+		<p class="album_price">${album.Price}$</p>
+			</div>
+			<div class="card_btn_container">
+			<div class="view_album_btn">
+			<a href="/detailed.html?id=${album.id}">
+			View album
+			</a></div>
+			<div class="like_btn" id="${buttonId}">
+			<i class="far fa-heart" data-name="${album.ArtistName}" data-album="${album.AlbumName}" data-price="${album.Price}"></i></div>
+			</div>
 		</div>
+		<div class="description_container">${withDescription === true ? `<p>${album.Description}</p>` : ""}</div>
+	</div>
+
 	`
 
 	document.querySelector('.albums').appendChild(albumCard)
