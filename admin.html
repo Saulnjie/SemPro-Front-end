@@ -15,10 +15,37 @@
     <title>Cammies Records | Admin</title>
 </head>
 <body>
+
+    <form id="create-album-form" name="create-album-form" style="display: flex; flex-direction: column;">
+        <label for="album-name">Album Name</label>
+        <input type="text" name="album-name">
+
+        <label for="artist-name">Artist Name</label>
+        <input type="text" name="artist-name">
+
+        <label for="cover-tag">Cover Tag</label>
+        <input type="text" name="cover-tag">
+
+        <label for="cover-link">Cover Link</label>
+        <input type="type" name="cover-link">
+
+        <label for="price">Price</label>
+        <input type="number" name="price">
+
+        <label for="description">Description</label>
+        <textarea  name="description"></textarea>
+
+        <div>
+            <label for="featured">Featured</label>
+            <input type="checkbox" name="featured" >
+        </div>
+        <button type="submit">Submit</button>
+    </form>
     
+    <script src="./admin.js"></script>
 </body>
 </html>
 
 
 
-<a href="./details.html?id=${character.id}" />Show Details</a>     
+<a href="./details.html?id=${character.id}" />Show Details</a>
