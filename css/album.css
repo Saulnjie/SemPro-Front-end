@@ -4,7 +4,8 @@
 .album_wrapper {
     display:flex;
     flex-direction: row;
-    justify-content: flex-start;
+    /* justify-content: space-between; */
+    width: 100%;
 }
 
 
@@ -66,4 +67,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
+.album_card img {
+    border-radius: 4px 0px 0px 4px;
+}

@@ -13,6 +13,7 @@
 
   body {
       font-family: var(--font);
+      height: fit-content;
   }
   
 .container {
@@ -24,6 +25,13 @@
 .card_container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    /* width:400px; */
+    
+}
+.card_wrapper {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -31,11 +39,11 @@
     display: flex;
     flex-direction: column;
     margin: 15px;
-    height: 75px;
+    height: 90px;
 }
 
 .card_info_container h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -43,27 +51,35 @@
     font-size: 16px;
     font-weight: 300;
     }
+.card_info_container p {
+    font-size: 16px;
+    font-weight: 300;
+}
 
 .card_btn_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     margin: 15px;
+
         
 }    
 .view_album_btn {
     border: none;
     height: 50px;
-    /* width: 125px; */
+    width: 125px;
     background-color:var(--buttonColor);
     color: white;
     display: flex;
     justify-content: center;
     padding: 15px;
+    border-radius: 4px;
 } 
     
 .view_album_btn a {
    color: white;
    text-decoration: none;
+   font-size: 16px;
+  
 }
 
 .login_button {
@@ -74,12 +90,13 @@
     color: white;
     display: flex;
     justify-content: center;
+    border-radius: 4px;
  }
 
 .like_btn {
     /* width: 50px; */
     margin-bottom: auto;
-    margin-left: 15px;
+    margin-left: auto;
 }
 
 .nav-item .active {
@@ -111,6 +128,8 @@ body {
     background-color:white ;
 }
 
+
+
 .nav-link {
     color: white !important;
 }
@@ -139,15 +158,12 @@ footer p {
 }
 
 .heroBanner {
-    width: 75%;
+    width: 100%;
     height: 275px;
     object-fit: cover;
+    margin-bottom: 30px;
 }
-.loginBanner {
-    width: 25%;
-    height: 275px;
-    object-fit: cover;
-}
+
 
 .hero_title {
     color: var(--yellow);
