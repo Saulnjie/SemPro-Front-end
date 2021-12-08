@@ -40,9 +40,13 @@ button {
     background-color:var(--buttonColor);
 }
 
-.buttonBack {
-    border: 2px soilid black;
-    background-color: var(--cardBackground);
+.login_button {
+    border: none;
+    height: 40px;
+    width: 100px;
+    background-color:var(--buttonColor);
     color: white;
+    display: flex;
+    justify-content: center;
 }
 

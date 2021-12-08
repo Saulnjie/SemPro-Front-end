@@ -35,8 +35,8 @@
 }
 
 .card_info_container h1 {
-font-size: 20px;
-font-weight: 400;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .card_info_container h2 {
@@ -45,26 +45,35 @@ font-weight: 400;
     }
 
 .card_btn_container {
-        display: flex;
-        flex-direction: row;
-        margin: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
         
-    }    
+}    
 .view_album_btn {
-        border: none;
-        height: 25px;
-        width: 100px;
-        background-color:var(--buttonColor);
-        color: white;
-        display: flex;
-        justify-content: center;
-    } 
+    border: none;
+    height: 25px;
+    width: 100px;
+    background-color:var(--buttonColor);
+    color: white;
+    display: flex;
+    justify-content: center;
+} 
     
 .view_album_btn a {
-        color: white;
-        text-decoration: none;
-    }
+   color: white;
+   text-decoration: none;
+}
 
+.login_button {
+    border: none;
+    height: 40px;
+    width: 100px;
+    background-color:var(--buttonColor);
+    color: white;
+    display: flex;
+    justify-content: center;
+ }
 
 .like_btn {
     /* width: 50px; */
@@ -123,8 +132,8 @@ footer p {
 }
 
 .heroSection-container {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .heroBanner {
