@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     margin: 15px;
-    height: 100px;
+    height: 75px;
 }
 
 .card_info_container h1 {
@@ -52,12 +52,13 @@
 }    
 .view_album_btn {
     border: none;
-    height: 25px;
-    width: 100px;
+    height: 50px;
+    /* width: 125px; */
     background-color:var(--buttonColor);
     color: white;
     display: flex;
     justify-content: center;
+    padding: 15px;
 } 
     
 .view_album_btn a {
@@ -77,6 +78,7 @@
 
 .like_btn {
     /* width: 50px; */
+    margin-bottom: auto;
     margin-left: 15px;
 }
 
@@ -138,12 +140,12 @@ footer p {
 
 .heroBanner {
     width: 75%;
-    height: 400px;
+    height: 275px;
     object-fit: cover;
 }
 .loginBanner {
     width: 25%;
-    height: 400px;
+    height: 275px;
     object-fit: cover;
 }
 

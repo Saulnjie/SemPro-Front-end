@@ -47,5 +47,6 @@ export function renderAlbum(album, withDescription = false) {
 		}
 
 		localStorage.setItem("favorites", JSON.stringify(favorites))
+		// heartButton.classList.toggle(".fas")
 	}
 }
