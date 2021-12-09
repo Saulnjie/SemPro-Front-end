@@ -35,6 +35,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .card_info_container {
@@ -56,6 +57,7 @@ body {
 .card_info_container p {
     font-size: 16px;
     font-weight: 300;
+    margin-top: auto;
 }
 
 .card_btn_container {
@@ -215,6 +217,13 @@ footer p {
     display: none; 
 }
 
+.navbar-toggler {
+    border-color: transparent !important;
+   /* &:focus */
+      outline: none !important;
+      box-shadow: none !important;
+    
+  }
 /* this is for media, but there are issues caused by bootstrap - reeee */
 /* .logo_hamburger_container {
     display: flex;
