@@ -156,11 +156,21 @@ footer p {
 .footer-image {
   /* margin-right: ; */
 }
+.footer-content {
+    color: var(--yellow);
+    margin: auto;
+}
+.footer-content p {
+    font-size: 14px;
+    color: var(--yellow);
+    margin: auto;
+}
 
 .footer_paragraph {
     color: white;
     font-size: 18px;
     font-weight: 300;
+    margin-top: 50px;
 }
 
 .heroSection-container {
