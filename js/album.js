@@ -69,33 +69,3 @@ export function renderAlbum(album, withDescription = false) {
 		localStorage.setItem("favorites", JSON.stringify(favorites))
 	}
 }
-
-
-
-
-
-
-
-
-// const heartButton = document.getElementById(buttonId);
-// heartButton.onclick = () => {
-	
-// 	let favorites = getStoredFavorites()
-// 	const isAdded = favorites.some(item => item.id === album.id)
-
-// 	if (isAdded) {
-// 		const index = favorites.indexOf(album)
-// 		favorites.splice(index, 1)
-// 		// Issues, removing wrong favorites when clicking likes button
-// 		favorites = favorites;
-// 	} else {
-// 		favorites.push(album)
-// 	}
-
-// 	localStorage.setItem("favorites", JSON.stringify(favorites))
-// 	// heartButton.classList.toggle(".fas")
-// }
-// }
-
-const source = [{a: 1}, {b: 2}]
-const index = source.indexOf(source[0]) // 0 
