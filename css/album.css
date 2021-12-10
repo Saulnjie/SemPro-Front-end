@@ -64,7 +64,7 @@
 
 .card_wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 .album_card img {
