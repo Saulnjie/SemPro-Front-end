@@ -27,7 +27,7 @@
 }
 
 .heroBanner {
-    width: 75%;
+    /* width: 75%; */
     height: 275px;
     object-fit: cover;
 }
