@@ -1,7 +1,15 @@
 import { getAllAlbums } from "./data.js";
 import { renderAlbum } from "./album.js";
 
+// let albums = await getAllAlbums;
+// console.log(albums)
+// let featuredAlbums = albums.filter(album => album.featured == true)
+
+// console.log(featuredAlbums)
+
+
 getAllAlbums().then(albums => albums.forEach(renderAlbum))
+
 
 // export const featuredHTML = (getAllAlbums, albums) => {
 //     getAllAlbums.forEach(({ Albumcover, Featured, ArtistName, id }) => {

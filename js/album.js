@@ -3,6 +3,7 @@ import { getStoredFavorites } from "./helpers.js"
 export function renderAlbum(album, withDescription = false, featured = false,) {
 	const buttonId = `heart-button-${album.id}`
 	const id = `album-${album.id}`
+	// console.log("This is the real",featured) 
 
 	const albumCard = document.createElement("div")
 	albumCard.id = id
@@ -36,7 +37,7 @@ export function renderAlbum(album, withDescription = false, featured = false,) {
 			<div class="description_container">${featured === true ? `<p>${album.Featured === true}</p>` : featuredAlbums}</div>
 		</div>
 	`
-	console.log(featured) 
+	console.log("This is afucking twat",featured) 
 
 
 	document.querySelector('.albums').appendChild(albumCard)
