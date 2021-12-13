@@ -9,8 +9,6 @@ export function renderAlbum(album, withDescription = false, featured = false,) {
 	albumCard.id = id
 	let favorites = getStoredFavorites();
 	const isFavorited = favorites.some(item => item.id === album.id)
-	const featuredAlbums = "";
-
 
 	albumCard.classList.add("album_card")
 	albumCard.innerHTML = `
@@ -33,13 +31,9 @@ export function renderAlbum(album, withDescription = false, featured = false,) {
 				</div>
 			</div>
 			<div class="description_container">${withDescription === true ? `<p>${album.Description}</p>` : ""}</div>
-
-			<div class="description_container">${featured === true ? `<p>${album.Featured === true}</p>` : featuredAlbums}</div>
-		</div>
-	`
-	console.log("This is afucking twat",featured) 
-
-
+			</div>
+			`
+			
 	document.querySelector('.albums').appendChild(albumCard)
 
 	const filledHeart = document.querySelector(`#${id} .fas.fa-heart`)

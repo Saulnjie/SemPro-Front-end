@@ -7,13 +7,11 @@ import { renderAlbum } from "./album.js";
 
 // console.log(featuredAlbums)
 
-
 getAllAlbums().then(albums => albums.forEach(renderAlbum))
-
 
 // export const featuredHTML = (getAllAlbums, albums) => {
 //     getAllAlbums.forEach(({ Albumcover, Featured, ArtistName, id }) => {
-//       if (Featured === true) {
+//       if (Featured l=== true) {
 //         return (document.querySelector(albums).innerHTML += `
 //             <div class="col-sm-4 col-md-4">
 //           <div class="featured__card">
