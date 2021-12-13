@@ -1,6 +1,6 @@
 import { getStoredFavorites } from "./helpers.js"
 
-export function renderAlbum(album, withDescription = false) {
+export function renderAlbum(album, withDescription = false, featured = false,) {
 	const buttonId = `heart-button-${album.id}`
 	const id = `album-${album.id}`
 
@@ -8,6 +8,7 @@ export function renderAlbum(album, withDescription = false) {
 	albumCard.id = id
 	let favorites = getStoredFavorites();
 	const isFavorited = favorites.some(item => item.id === album.id)
+	const featuredAlbums = "";
 
 
 	albumCard.classList.add("album_card")
@@ -31,8 +32,12 @@ export function renderAlbum(album, withDescription = false) {
 				</div>
 			</div>
 			<div class="description_container">${withDescription === true ? `<p>${album.Description}</p>` : ""}</div>
+
+			<div class="description_container">${featured === true ? `<p>${album.Featured === true}</p>` : featuredAlbums}</div>
 		</div>
 	`
+	console.log(featured) 
+
 
 	document.querySelector('.albums').appendChild(albumCard)
 
@@ -69,3 +74,5 @@ export function renderAlbum(album, withDescription = false) {
 		localStorage.setItem("favorites", JSON.stringify(favorites))
 	}
 }
+
+

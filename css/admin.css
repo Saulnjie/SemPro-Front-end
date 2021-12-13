@@ -2,12 +2,24 @@
 
 
 
+.admin_content_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
 .admin_form_container {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 50%;
     margin: auto;
     margin-top: 5%;
-   
 }
 
+.edit_api_container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
