@@ -1,0 +1,5 @@
+@import "/css/main.css";
+
+.cart_alert {
+    color: var(--yellow) !important;
+}
