@@ -40,7 +40,7 @@
                             <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="/products.html">All albums</a>
+                            <a class="nav-link" href="/products.html">Albums</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="/cart.html">Cart</a>
@@ -69,7 +69,7 @@
         <div class="admin_content_container">
 
         <div class="admin_form_container">
-          <form id="create-album-form" name="create-album-form" style="display: flex; flex-direction: column;">
+          <form class="admin_form" id="create-album-form" name="create-album-form" style="display: flex; flex-direction: column;">
         <label for="album-name">Album Name</label>
         <input type="text" name="album-name">
 
@@ -92,9 +92,11 @@
             <label for="featured">Featured (not required)</label>
             <input type="checkbox" name="featured" >
         </div>
-        <button type="submit">Submit</button>
+        <button class="submit_form_btn" type="submit">Submit</button>
     </form>
     <div class="edit_btn_container">
+      <p class="edit_paragraph hero_paragraph">You are a certified superuser, and can therefor also edit & delete objects in the API</p>
+
     <a href="/edit.html"><button class="edit_api_btn">Edit API</button></a>
   </div>
   </div>
