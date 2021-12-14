@@ -1,6 +1,6 @@
 import { getStoredFavorites } from "./helpers.js"
 
-export function renderAlbum(album, withDescription = false, featured = false,) {
+export function renderAlbum(album, withDescription = false) {
 	const buttonId = `heart-button-${album.id}`
 	const id = `album-${album.id}`
 	// console.log("This is the real",featured) 
