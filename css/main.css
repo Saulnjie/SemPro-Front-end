@@ -201,8 +201,8 @@ footer p {
 
 .hero_title {
     color: var(--yellow);
-    font-size: 40px;
-    font-weight:700;
+    font-size: 50px;
+    font-weight:600;
 }
 
 .hero_paragraph {
