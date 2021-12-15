@@ -11,3 +11,10 @@ favorites.forEach(album => renderAlbum(album))
 //     <h2 class="cart_alert">Your cart is empty!</h2>`
 // }
 
+
+// function calculatePrice((favorites) {
+//     let y = favorites.Price.value;
+//     let z = ${album.Price}.value;
+//     let x = y + z;
+//     document.getElementsByClassName(".total_price_container").innerHTML = +;
+//   });

@@ -5,6 +5,16 @@ if (!strapiAccessToken) {
   window.location.replace("/login.html")
 }
 
+
+// if (!strapiAccessToken) {
+  
+//   login_btn.style.display = "none"
+//   logout_btn.style.display = "inline"
+// } else {
+//   logout_btn.style.display = "none"
+//   login_btn.style.display = "inline"
+// }
+
 // Implement logic for expired accesstokens
 
 
