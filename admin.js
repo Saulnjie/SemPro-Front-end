@@ -2,6 +2,7 @@ const strapiAccessToken = localStorage.getItem("strapi-access-token")
 const form = document.querySelector("#create-album-form")
 
 if (!strapiAccessToken) {
+  console.log('There is no JWT token');
   window.location.replace("/login.html")
 }
 
