@@ -18,9 +18,9 @@ document.querySelector(".actual_price_container")
 const priceResults =   document.createElement("reults")
 
 priceResults.innerHTML = `
-    <p>dada<p>
+    <p>daddadadada<p>
     `;
-    document.querySelector('.priceResults').appendChild(".total_price_container")
+    document.querySelector('.priceResults').appendChild(".actual_price_container")
 
 
     
