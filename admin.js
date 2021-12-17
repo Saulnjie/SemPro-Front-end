@@ -3,9 +3,11 @@ const form = document.querySelector("#create-album-form")
 
 if (!strapiAccessToken) {
   console.log('There is no JWT token');
+  alert("You are not a cerified superuser. Press OK to redirect!");
   window.location.replace("/login.html")
 }
 
+// // alert("You are not a cerified superuser. Redirecting!");
 
 // if (!strapiAccessToken) {
   
