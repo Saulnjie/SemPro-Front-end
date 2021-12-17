@@ -1,8 +1,5 @@
 @import "/css/main.css";
 
-.cart_alert {
-    color: var(--yellow) !important;
-}
 
 .total_price_container {
     display: flex;
@@ -17,7 +14,8 @@
 }
 
 .actual_price_container {
-font-size: 18px;
+font-size: 22px;
 font-weight: 400;
 color: var(--yellow);
+margin-left: auto;
 }
