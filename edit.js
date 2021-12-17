@@ -15,8 +15,6 @@ logoutButton.onclick = () => {
     window.location.replace("/")
   }
   
-  
-  
   if (strapiAccessToken) {
     loginButton.style.display = "none";
   } else {
