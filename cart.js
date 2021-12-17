@@ -8,16 +8,11 @@ favorites.forEach(album => renderAlbum(album))
 console.log(favorites)
 let numOr0 = n => isNaN(n) ? 0 : n
 let totalPrices = favorites
-    .map(favorite => favorite.Price)
-    .reduce((a, b) => numOr0(a) + numOr0(b))
+    .reduce((totalPrice, currentValue) => totalPrice += currentValue.Price, 0)
 
 console.log(totalPrices)
 
 document.querySelector(".actual_price_container")
 
-const priceResults =   document.createElement("reults")
-
-priceResults.innerHTML = `
-    <p>daddadadada<p>
-    `;
-    document.querySelector('.priceResults').appendChild(".actual_price_container")
+const priceContainer = document.querySelector(".actual_price_container")
+priceContainer.innerText = "$" + totalPrices

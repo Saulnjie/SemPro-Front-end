@@ -1,6 +1,6 @@
 import { getStoredFavorites } from "./helpers.js"
 
-export function renderAlbum(album, withDescription = false) {
+export function renderAlbum(album, withDescription = false, withDeleteButton = false) {
 	const buttonId = `heart-button-${album.id}`
 	const id = `album-${album.id}`
 	// console.log("This is the real",featured) 
@@ -10,6 +10,8 @@ export function renderAlbum(album, withDescription = false) {
 	let favorites = getStoredFavorites();
 	const isFavorited = favorites.some(item => item.id === album.id)
 
+
+	console.log("DB",withDeleteButton)
 	albumCard.classList.add("album_card")
 	albumCard.innerHTML = `
 		<img class="album-cover" src="${album.Albumcover}" alt="${album.Covertag}">
@@ -22,9 +24,8 @@ export function renderAlbum(album, withDescription = false) {
 				</div>
 				<div class="card_btn_container">
 				<div class="view_album_btn">
-				<a href="/detailed.html?id=${album.id}">
-				View album
-				</a></div>
+				${withDeleteButton  ? `<button class="delete-album">Delete</button>` : `<a href="/detailed.html?id=${album.id}">View album</a>`}
+				</div>
 				<div class="like_btn" id="${buttonId}">
 				<i class="far fa-heart" data-name="${album.ArtistName}" data-album="${album.AlbumName}" data-price="${album.Price}"></i>
 				<i class="fas fa-heart" data-name="${album.ArtistName}" data-album="${album.AlbumName}" data-price="${album.Price}"></i
@@ -67,6 +68,43 @@ export function renderAlbum(album, withDescription = false) {
 		}
 
 		localStorage.setItem("favorites", JSON.stringify(favorites))
+	}
+
+
+	if (withDeleteButton) {
+		const deleteButton = document.querySelector(`#${id} .delete-album`)
+	
+		deleteButton.onclick = async () => {
+			const confirmed = confirm(`Are you sure you want to delete album "${album.AlbumName}"?`)
+	
+			if (confirmed) {
+				const strapiAccessToken = localStorage.getItem("strapi-access-token")
+	
+				if (!strapiAccessToken) {
+					window.location.replace("/login.html")
+				}
+	
+				if (!strapiAccessToken.startsWith("ey")) {
+					window.location.replace("/login.html")
+				}
+	
+				const response = await fetch(`https://cammiesrecords.herokuapp.com/albums/${album.id}`, {
+					method: "DELETE",
+					headers: {
+						Authorization: `Bearer ${strapiAccessToken}`
+					}
+				})
+
+				if (!response.ok) {
+					// Handle error
+					console.error(await response.json())
+					alert("Failed to delete album")
+				}
+
+				albumCard.remove()
+
+			}
+		}
 	}
 }
 

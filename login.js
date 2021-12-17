@@ -24,8 +24,9 @@ form.onsubmit = async (event) => {
   })
 
   if (!response.ok) {
-     // handle error
+    console.log(await response.text())
   }
+
 
   const { jwt } = await response.json()
   localStorage.setItem("strapi-access-token", jwt)

@@ -4,7 +4,7 @@ import { renderAlbum } from "./album.js";
 getAllAlbums().then((albums) => 
 albums
 .filter((albums) => albums.Featured === true)
-.forEach(renderAlbum)
+.forEach((album) => renderAlbum(album))
 );
 
 
