@@ -3,7 +3,6 @@ import { getStoredFavorites } from "./helpers.js"
 export function renderAlbum(album, withDescription = false, withDeleteButton = false) {
 	const buttonId = `heart-button-${album.id}`
 	const id = `album-${album.id}`
-	// console.log("This is the real",featured) 
 
 	const albumCard = document.createElement("div")
 	albumCard.id = id
@@ -57,7 +56,6 @@ export function renderAlbum(album, withDescription = false, withDeleteButton = f
 			const index = favorites.indexOf(existingAlbum)
 			favorites.splice(index, 1)
 
-			// Issues, removing wrong favorites when clicking likes button
 			favorites = favorites;
 			filledHeart.style.display = "none"
 			outlinedHeart.style.display = "inline"
@@ -96,7 +94,6 @@ export function renderAlbum(album, withDescription = false, withDeleteButton = f
 				})
 
 				if (!response.ok) {
-					// Handle error
 					console.error(await response.json())
 					alert("Failed to delete album")
 				}

@@ -4,3 +4,36 @@
 .edit_api_btn {
 
 }
+
+.view_album_btn {
+    border: none;
+    height: 50px;
+    width: 125px;
+    background-color:var(--buttonColor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 4px;
+
+} 
+
+button {
+    border: none;
+    /* height: 40px; */
+    /* width: 100px; */
+    /* background-color:var(--buttonColor); */
+    color: white;
+    border-radius: 4px;
+    /* margin-bottom:20px ; */
+}
+
+.delete-album {
+    border: none;
+    /* height: 40px; */
+    /* width: 100px; */
+    /* background-color:var(--buttonColor); */
+    color: white;
+    border-radius: 4px;
+    /* margin-bottom:20px ; */
+}

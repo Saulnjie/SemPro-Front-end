@@ -11,19 +11,6 @@ if (!strapiAccessToken) {
   window.location.replace("/login.html")
 }
 
-// // alert("You are not a cerified superuser. Redirecting!");
-
-// if (!strapiAccessToken) {
-  
-//   login_btn.style.display = "none"
-//   logout_btn.style.display = "inline"
-// } else {
-//   logout_btn.style.display = "none"
-//   login_btn.style.display = "inline"
-// }
-
-// Implement logic for expired accesstokens
-
 
 
 form.onsubmit = async (event) => {
@@ -58,7 +45,6 @@ form.onsubmit = async (event) => {
   })
 
   if (!response.ok) {
-    // Handle error here
     const errorResponse = await response.json()
     console.error(errorResponse)
     throw new Error("An error occured during album creation")
